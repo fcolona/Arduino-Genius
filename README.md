@@ -11,14 +11,17 @@ O projeto se trata de uma réplica do jogo de memorização Genius, utilizando A
 ## Componentes
 | Quantidade      | Componente              | Preço                   |
 | --------------- | ----------------------- | ----------------------- |
-| 1x              | Arduino Uno R3          |                         |
-| 1x              | LED Vermelho            |                         |
-| 1x              | LED Verde               |                         |
-| 1x              | LED Azul                |                         |
-| 1x              | LED Amarelo             |                         |
-| 4x              | Botão                   |                         |
-| 1x              | Resistor                |                         |
-| TOTAL           |                         | R$00,00                 |
+| 1x              | Arduino Uno R3          | R$ 39,87                |
+| 1x              | LED Vermelho            | R$ 00,50                |
+| 1x              | LED Verde               | R$ 00,50                |
+| 1x              | LED Azul                | R$ 00,50                |
+| 1x              | LED Amarelo             | R$ 00,50                |
+| 1x              | Buzzer                  | R$ 09,70                |
+| 4x              | Botão                   | R$ 01,50                |
+| 8x              | Resistor 100R           | R$ 00,70                |
+| 1x              | Resistor 560R           | R$ 00,70                |
+| 1x              | Protoboard              | R$ 12,99                |
+| TOTAL           |                         | R$ 76,86                |
 
 ## Software
 https://github.com/fcolona/Arduino-Genius/blob/bb23de8fa63142385735a41cceede9e0fe249f41/src/genius.ino#L1-L138
