@@ -25,7 +25,7 @@ O projeto se trata de uma réplica do jogo de memorização Genius, utilizando A
 | TOTAL           |                         | R$ 80,20                |
 
 ## Software
-https://github.com/fcolona/Arduino-Genius/blob/bb23de8fa63142385735a41cceede9e0fe249f41/src/genius.ino#L1-L138
+https://github.com/fcolona/Arduino-Genius/blob/58eaf9d7b13cf2d74dd0f31af4ce9e3e7dc329af/src/genius.ino#L1-L167
 
 ## Tinkercad
 ![Tinkercad](imgs/tinkercad.png)
