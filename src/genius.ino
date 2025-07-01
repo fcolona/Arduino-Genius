@@ -37,6 +37,34 @@ void setup()
   randomSeed(analogRead(A1));
 }
 
+void animacaoperdeu(void){
+    digitalWrite(LR, HIGH);
+    delay(100);
+    digitalWrite(LB, HIGH);
+    delay(100);
+    digitalWrite(LG, HIGH);
+    digitalWrite(LR, LOW);
+    delay(100);
+    digitalWrite(LY, HIGH);
+    digitalWrite(LB, LOW);
+    delay(100);
+    digitalWrite(LR, HIGH);
+    digitalWrite(LG, LOW);
+    delay(100);
+    digitalWrite(LB, HIGH);
+    digitalWrite(LY, LOW);
+    delay(100);
+    digitalWrite(LG, HIGH);
+    digitalWrite(LR, LOW);
+    delay(100);
+    digitalWrite(LY, HIGH);
+    digitalWrite(LB, LOW);
+    delay(100);
+    digitalWrite(LG, LOW);
+    delay(100);
+    digitalWrite(LG, LOW);
+}
+
 int detectarinput(void){
   //Inicializa os valores
   bool pressionou = false;
@@ -85,11 +113,11 @@ void loop(void)
   if(!emjogo){
     delay(1000);
     //Decide aleatoriamente qual LED irá acender
-  	sequencia[tam_sequencia] = random(2,6);
+    sequencia[tam_sequencia] = random(2,6);
     emjogo = true;
     for(int i = 0; i < tam_sequencia + 1; i++){
         //Acende o LED escolhido
-      	digitalWrite(sequencia[i], HIGH);
+        digitalWrite(sequencia[i], HIGH);
         //Aciona o buzzer
         tone(6, sequencia[i] * 2000, 150);
         delay(300);
@@ -110,21 +138,22 @@ void loop(void)
     tone(6, qpressionou * 2000, 150); //Aciona o buzzer para dar um feedback sonoro
     //Se o botão pressionado corresponder ao LED correto
     if(qpressionou == sequencia[atual]){
-      	atual++;
+        atual++;
     }else{
      //Se perdeu, reseta tudo e aciona o buzzer
-      	perdeu = true;
+        perdeu = true;
         emjogo = false;
         atual = 0;
         tam_sequencia = 0;
-      	for(int i=0; i<MAX; i++){
-        	sequencia[i]=0;
-      	}
+        for(int i=0; i<MAX; i++){
+          sequencia[i]=0;
+        }
         tone(6, 31, 700);
+        animacaoperdeu();
     }
     //Acaba a rodada
     if(atual == tam_sequencia + 1){
-      	tam_sequencia++;
+        tam_sequencia++;
         emjogo = false;
         atual = 0;
     }
