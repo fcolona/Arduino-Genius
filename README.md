@@ -30,3 +30,7 @@ https://github.com/fcolona/Arduino-Genius/blob/58eaf9d7b13cf2d74dd0f31af4ce9e3e7
 ## Tinkercad
 ![Tinkercad](imgs/tinkercad.png)
 [Link](https://www.tinkercad.com/things/lvQODzRaBvZ-copy-of-fantastic-densor-kieran)
+
+## Vídeo
+[![Vídeo](https://img.youtube.com/vi/WEXncw1QR_w/hqdefault.jpg)](https://youtu.be/WEXncw1QR_w)\
+[Link](https://youtu.be/WEXncw1QR_w)
